@@ -1,0 +1,118 @@
+.portfolio__footer{
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-footer);
+}
+.portfolio__footer-heading{
+  width: 100%;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.portfolio__footer-heading h1{
+  font-family: var(--font-family);
+  font-weight: 800;
+  font-size: 62px;
+  line-height: 75px;
+  text-align: center;
+  letter-spacing: -0.04em;
+}
+.portfolio__footer-btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  border: 1px solid #fff;
+  text-align: center;
+  margin-bottom: 10rem;
+  cursor: pointer;
+}
+.portfolio__footer-heading p{
+  box-sizing: border-box;
+  font-family: var(--font-family);
+  font-size: 40px;
+  line-height: 21px;
+  color: #333;
+  word-spacing: 2px;
+}
+.portfolio__footer-links{
+  display: flex;
+  font-family: var(--font-family);
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  text-align: left;
+}
+.portfolio__footer-links div {
+  width: 250px;
+  margin: 1rem;
+}
+.portfolio__footer-links_logo{
+  display: flex;
+  flex-direction: column;
+}
+.portfolio__footer-links_logo h1{
+  font-family: var(--font-family);
+}
+.portfolio__footer-links_logo img{
+  width: 118px;
+  height: 30px;
+  margin-bottom: 1rem;
+}
+.portfolio__footer-links_logo p{
+  font-family: var(--font-family);
+  font-size: 12px;
+  line-height: 14px;
+  color: #333;
+}
+.portfolio__footer-links_div{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.portfolio__footer-links_div h4{
+  font-family: var(--font-family);
+  font-size: 20px;
+  line-height: 16px;
+  color: #333;
+  margin-bottom: 1rem;
+}
+.portfolio__footer-links_div a{
+  text-decoration: none;
+  font-family: var(--font-family);
+  font-size: 15px;
+  line-height: 14px;
+  color: #333;
+  margin: 0.5rem 0;
+  cursor: pointer;
+}
+.portfolio__footer-links_div a:hover{
+  color: rgb(67, 165, 245);
+}
+.portfolio__footer-links_div a .i{
+  margin-right: 10px;
+}
+.portfolio__footer-copyright{
+  margin-top: 2rem;
+  text-align: center;
+  width: 100%;
+}
+.portfolio__footer-copyright p{
+  font-family: var(--font-family);
+  font-size: 12px;
+  line-height: 14px;
+  color: #333;
+}
+@media screen and (max-width: 550px) {
+  .portfolio__footer-links div{
+      margin: 1rem 0;
+  }
+  .portfolio__footer-btn p{
+      font-size: 14px;
+      line-height: 20px;
+  }
+}

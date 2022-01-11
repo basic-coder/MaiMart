@@ -1,0 +1,90 @@
+.searchBox {
+  right: 1vmax;
+  top: 3.6rem;
+  transform: translate(-50%, -50%);
+  background: #041897;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 30px;
+  width: 200px;
+  border-radius: 40px;
+  padding: 10px 15px;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.25);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  z-index: 40;
+}
+.searchBox:hover .searchBtn {
+  color: #041897;
+  text-decoration: none;
+}
+.searchBtn {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #041897;
+  float: right;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.25);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}
+.searchBtn input {
+  display: none;
+}
+.searchTxt {
+  border: none;
+  background: transparent;
+  outline: none;
+  padding: 0;
+  font-family: sans-serif;
+  color: #fff !important;
+  font-size: 15px;
+  transition: 0.4s;
+  line-height: 10px;
+  width: 200px;
+}
+.searchTxt:focus {
+  outline: none;
+  border: none;
+}
+.searchBox > input[type="text"] {
+  box-shadow: none;
+  background-color: #fff;
+  border: none;
+  padding: 0.5vmax 0.5vmax;
+  font-family: sans-serif;
+  font-size: 15px;
+  width: 85%;
+  outline: none;
+  border-radius: 0%;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .searchBox {
+    right: 0vmax;
+    top: 4.5vmax;
+  }
+}
+
+@media screen and (max-width: 500px){
+.searchBox {
+    right: -2vmax;
+    top: 5vmax;
+}
+}
+
+@media screen and (max-width: 400px){
+.searchBox {
+    right: -4vmax;
+    top: 6.5vmax;
+}
+}

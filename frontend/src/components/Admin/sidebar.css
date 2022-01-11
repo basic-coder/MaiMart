@@ -1,0 +1,41 @@
+.sidebar{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 0;
+}
+.sidebar > a:first-child{
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sidebar > a >img{
+    width: 60%;
+    height: 80%;
+    transition: all 0.5s;
+}
+.sidebar > a > img:hover{
+    filter: drop-shadow(0 0 10px #31aef7);
+}
+.sidebar a{
+    text-decoration: none;
+    font: 200 1rem "Roboto";
+    transition: all 0.5s;
+    padding: 2rem;
+    color: rgba(0,0,0,0.491);
+}
+.sidebar a:hover{
+    color: #31aef7;
+    transform: scale(1.1);
+}
+.sidebar a > p{
+    display: flex;
+    align-items: center;
+}
+.sidebar a > p > svg{
+    margin-right: 0.5rem;
+}
+.MuiTopography-root{
+    background-color: #fff !important;
+}

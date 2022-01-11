@@ -1,0 +1,21 @@
+.loading{
+    width:100vw;
+    height: 100vh; 
+    background-color: #fff ;
+    display: grid;
+    place-items: center;
+    max-width: 100%;
+}
+.loading > div{
+    width: 10vmax;
+    border-bottom: 5px solid #31aef7;
+    height: 10vmax; 
+    border-radius: 50%;
+    animation: loaderState 800ms linear infinite;
+}
+
+@keyframes loaderState{
+    to{
+        transform: rotateZ(-360deg);
+    }
+}
