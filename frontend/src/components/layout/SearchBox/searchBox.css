@@ -1,7 +1,10 @@
-.searchBox {
+.searchp{
+  position: absolute;
   right: 1vmax;
   top: 3.6rem;
   transform: translate(-50%, -50%);
+}
+.searchBox {
   background: #041897;
   display: flex;
   justify-content: space-between;
@@ -69,21 +72,21 @@
 }
 
 @media screen and (max-width: 800px) {
-  .searchBox {
+  .searchp {
     right: 0vmax;
     top: 4.5vmax;
   }
 }
 
 @media screen and (max-width: 500px){
-.searchBox {
+.searchp{
     right: -2vmax;
     top: 5vmax;
 }
 }
 
 @media screen and (max-width: 400px){
-.searchBox {
+.searchp {
     right: -4vmax;
     top: 6.5vmax;
 }

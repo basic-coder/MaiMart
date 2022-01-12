@@ -11,6 +11,7 @@ import Slider from '@material-ui/core/Slider';
 import Typography from '@material-ui/core/Typography' 
 import MetaData from '../layout/MetaData'
 import {ThemeContext} from '../../context'
+import SearchBox from '../layout/SearchBox/SearchBox';
 const categories =[
     "Laptop",
     "Footwear",
@@ -57,6 +58,7 @@ const Products = () => {
           {loading ? <Loader /> : 
           <>
           <MetaData title="PRODUCTS--MAIMART" />
+          <SearchBox style={{zIndex: 30}} />
           <div className="product">
           <h2 className="productHeading" style={{color: darkMode && "var(--color-text)" ,borderBottom: darkMode && "1px solid #fff"}}>Products</h2>
           <div className="products">

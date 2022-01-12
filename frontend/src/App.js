@@ -39,7 +39,6 @@ import UsersList from './components/Admin/UsersList';
 import UpdateUser from './components/Admin/UpdateUser';
 import ProductReviews from './components/Admin/ProductReviews';
 import NotFound from './components/layout/NotFound/NotFound';
-import SearchBox from './components/layout/SearchBox/SearchBox';
 import Contact from './components/Contact/Contact'
 import { ThemeContext } from './context';
 import About from './components/About/About';
@@ -75,7 +74,7 @@ const darkMode = theme.state.darkMode
     <div className ="dark" style={{ backgroundColor: darkMode ? "var(--color-bg)" : "#fff", color: darkMode && "#fff"}}>
     <Router>
       <Header  />
-      <SearchBox style={{zIndex: 30}} />
+  
       {isAuthenticated && <UserOptions user={user} />}
       <Routes>
         <Route path="/" element={<Home />} exact/>

@@ -107,15 +107,15 @@ const Payment = () => {
                 <Typography style={{ color: darkMode && "var(--color-text)"}}>Card Info</Typography>
             <div>
                 <CreditCardIcon  style={{ color: darkMode && "var(--color-text)"}}/>
-                <CardNumberElement className="paymentInput"  style={{ color: darkMode && "#fff !important"}} />
+                <CardNumberElement className="paymentInput"  style={{ color: darkMode && "white !important"}} />
             </div>
             <div>
                 <EventIcon  style={{ color: darkMode && "var(--color-text)"}}/>
-                <CardExpiryElement className="paymentInput"  style={{ color: darkMode && "#fff !important"}} />
+                <CardExpiryElement className="paymentInput"  style={{ color: darkMode && "white !important"}} />
             </div>
             <div style={{ color: darkMode && "#fff !important"}}>
                 <VpnKeyIcon  style={{ color: darkMode && "#fff"}}/>
-                <CardCvcElement className="paymentInput"  />
+                <CardCvcElement className="paymentInput" style={{ color: darkMode && "white !important"}} />
             </div>
 
             <input type="submit" value={`Pay - ₹${orderInfo && orderInfo.totalPrice}`} ref={payBtn} className="paymentFormBtn" />

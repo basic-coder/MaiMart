@@ -16,7 +16,7 @@ const SearchBox = () => {
     };
   return (
 
-    <form onSubmit={searchSubmitHandler}>
+    <form onSubmit={searchSubmitHandler} className='searchp'>
     <div className="searchBox">
       <input
         className="searchTxt" style={{background: 'transparent'}}

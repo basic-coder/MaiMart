@@ -7,6 +7,7 @@ import {useSelector,useDispatch} from 'react-redux'
 import Loader from '../layout/Loader/Loader'
 import { useAlert } from 'react-alert'
 import ProductCard from './ProductCard'
+import SearchBox from '../layout/SearchBox/SearchBox';
 import { ThemeContext } from '../../context';
 
 // const product ={
@@ -35,8 +36,9 @@ const Home = () => {
         {loading ? <Loader />:(
             <>
         <MetaData title="MaiMart"/>
+        
         <div className="banner" style={{backgroundColor: darkMode ? "var(--color-footer)" : "#fff" , color: darkMode && "#fff"}}>
-            
+        <SearchBox style={{zIndex: 30}} />
             <p>Welcome to Mai Mart</p>
             <h1>Everthing is here</h1>
             <a href="#container" >
